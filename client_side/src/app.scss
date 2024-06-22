@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Playfair+Display:wght@700&display=swap');
+
+// Creating CSS Variables
+$main-bg: #ffffff;
+$soft-bg: #eef0f2;
+$dark-bg: #dadee1;
+
+$main-color: #414141;
+$soft-color: #b1b1b1;
+$dark-color: #1b1f24;
+
+$green: #0fb400;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    color: $dark-color;
+    font-size: 1.5rem;
+
+    p{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $main-color;
+    margin-bottom: 0.5rem;
+}
+
+span{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: $soft-color;
+    transition: 0.25s ease;
+
+    &:hover{
+        color: $main-color
+    }
+}
+
+.App{
+    width: 100%;
+    height: 100vh;
+    background-color: $soft-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+
+    .container{
+        background-color: $main-bg;
+        box-shadow: 0px 0px 2rem 0px rgba($color: #000000, $alpha: 0.15);
+        border-radius: 2rem;
+        width: 500px;
+        min-height: 500px;
+        padding: 2rem;
+        
+    }
+}
+
+form{
+    label{
+        display: block;
+        font-size: 1rem;
+        
+    }
+
+    input{
+        background-color: $dark-bg;
+        color: $dark-color;
+        border: none;
+        outline: none;
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+        width: 100%;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        font-weight: bold;
+        background-color: $green;
+        border: none;
+        color: $main-bg;
+        border-radius: 2rem;
+        cursor: pointer;
+        transition: 0.25s ease;
+
+        &:hover{
+            background-color: rgba($color: $green, $alpha: 0.9);
+        }
+    }
+}
+
+
+// .tab-list {
+//     display: flex;
+//     justify-content: center;
+//     margin: 2rem 0;
+  
+//     span {
+//       padding: 0.5rem 1rem;
+//       margin: 0 0.5rem;
+//       cursor: pointer;
+//       border: 1px solid #ccc;
+//       border-radius: 4px;
+//       transition: background-color 0.3s ease, color 0.3s ease;
+  
+//       &:hover {
+//         background-color: #f0f0f0;
+//       }
+  
+//       &.active {
+//         background-color: #007bff;
+//         color: white;
+//         border-color: #007bff;
+//       }
+//     }
+//   }
+  
+//   .content {
+//     max-width: 800px;
+//     margin: 0 auto;
+//     padding: 2rem;
+  
+//     h1 {
+//       font-size: 2.5rem;
+//       font-weight: bold;
+//       color: #333;
+//       margin-bottom: 2rem;
+//     }
+  
+//     .row {
+//       display: flex;
+//       justify-content: center;
+  
+//       .card {
+//         background-color: #fff;
+//         border: 1px solid #ddd;
+//         border-radius: 8px;
+//         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+//         .btn-primary {
+//           background-color: #007bff;
+//           border-color: #007bff;
+//           padding: 0.5rem 1rem;
+//           margin-bottom: 1rem;
+//           transition: background-color 0.3s ease, border-color 0.3s ease;
+  
+//           &:hover {
+//             background-color: #0056b3;
+//             border-color: #004085;
+//           }
+//         }
+  
+//         .tab-list {
+//           display: flex;
+//           justify-content: center;
+//           margin: 1rem 0;
+  
+//           span {
+//             padding: 0.5rem 1rem;
+//             margin: 0 0.5rem;
+//             cursor: pointer;
+//             border: 1px solid #ccc;
+//             border-radius: 4px;
+//             transition: background-color 0.3s ease, color 0.3s ease;
+  
+//             &:hover {
+//               background-color: #f0f0f0;
+//             }
+  
+//             &.active {
+//               background-color: #007bff;
+//               color: white;
+//               border-color: #007bff;
+//             }
+//           }
+//         }
+  
+//         .list-group {
+//           margin-top: 1rem;
+  
+//           .list-group-item {
+//             padding: 0.75rem 1.25rem;
+//             border: 1px solid #ddd;
+//             border-left: 4px solid transparent;
+//             transition: background-color 0.3s ease, border-left-color 0.3s ease;
+  
+//             &:hover {
+//               background-color: #f9f9f9;
+//               border-left-color: #007bff;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }

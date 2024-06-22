@@ -1,0 +1,12 @@
+
+  
+  .custom-height-input {
+    height: 30px;
+     /* Reset inherited height if any */
+  }
+  
+  .custom-height-label {
+   position:relative;
+   top:5px;
+  }
+  
